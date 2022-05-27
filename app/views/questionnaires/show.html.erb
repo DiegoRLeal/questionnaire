@@ -1,4 +1,5 @@
-<div class="container mt-5">
+<div class="row justify-content-center mt-5 mb-5">
+  <div class="col-md-3">
 <p id="notice"><%= notice %></p>
 
   <%= @questionnaire.name %>
@@ -26,6 +27,7 @@
     <% end %>
   <% end %>
 
-<%= link_to 'Edit', edit_questionnaire_path(@questionnaire) %> |
-<%= link_to 'Back', questionnaires_path %>
+<%= link_to 'Edit', edit_questionnaire_path(@questionnaire), class: "btn btn-outline-primary mt-4" %>
+<%= link_to 'Back', questionnaires_path, class: "btn btn-outline-secondary mt-4" %>
+</div>
 </div>
